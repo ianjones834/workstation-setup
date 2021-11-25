@@ -21,7 +21,8 @@ ssh-add -K ~/.ssh/id_ed25519
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
-git clone git@github.com:ianjones834/workstation-setup.git ~/source
+git clone git@github.com:ianjones834/workstation-setup.git
+mv ~/workstation-setup.git ~/source
 
 source ~/.bash_profile
 
