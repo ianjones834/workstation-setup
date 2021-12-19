@@ -16,13 +16,15 @@ printf "Host *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25
 
 ssh-keygen -t ed25519 -C ianjones834@protonmail.com
 eval "$(ssh-agent -s)"
-ssh-add -K ~/.ssh/id_ed25519
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
 
-git clone git@github.com:ianjones834/workstation-setup.git
-mv ~/workstation-setup.git ~/source
+#use pbcopy < ~/.ssh/id_ed25519.pub and add it to the SSH keys in your github account
+
+mkdir ~/source
+git clone git@github.com:ianjones834/workstation-setup.git ~/source
 
 source ~/.bash_profile
 
