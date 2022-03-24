@@ -9,7 +9,7 @@ brew install git
 git config --global user.name "Ian Jones"
 git config --global user.email ianjones834@protonmail.com
 
-mkdir ~/.shh
+mkdir ~/.ssh
 touch ~/.ssh/config
 
 printf "Host *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25519" >> ~/.ssh/config
@@ -30,3 +30,4 @@ source ~/.bash_profile
 
 brew install --cask shiftit
 brew install --cask visual-studio-code
+
