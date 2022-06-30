@@ -30,4 +30,3 @@ source ~/.bash_profile
 
 brew install --cask shiftit
 brew install --cask visual-studio-code
-
