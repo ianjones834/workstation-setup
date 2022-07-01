@@ -30,3 +30,8 @@ source ~/.bash_profile
 
 brew install --cask shiftit
 brew install --cask visual-studio-code
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#copy the .vimrc file to ~/ and run :PlugInstall in vim
