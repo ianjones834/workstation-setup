@@ -1,3 +1,7 @@
+#Follow ubuntu's wsl instructions and docker setup for wsl
+#https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-10#1-overview
+#https://docs.docker.com/desktop/windows/wsl/#:~:text=The%20docker%20CLI%20and%20UI,both%20v1%20or%20v2%20mode.
+
 git config --global user.name "Ian Jones"
 git config --global user.email ianjones834@protonmail.com
 
