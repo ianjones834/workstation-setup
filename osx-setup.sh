@@ -4,7 +4,12 @@ chsh -s /bin/bash
 echo "export BASH_SILENCE_DEPRECATION_WARNING=1" >> ~/.bash_profile
 
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew update
+brew updgrade
+
 brew install git
+brew install --cask docker
 
 git config --global user.name "Ian Jones"
 git config --global user.email "email"
