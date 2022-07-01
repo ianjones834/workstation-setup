@@ -7,14 +7,14 @@ echo "export BASH_SILENCE_DEPRECATION_WARNING=1" >> ~/.bash_profile
 brew install git
 
 git config --global user.name "Ian Jones"
-git config --global user.email ianjones834@protonmail.com
+git config --global user.email "email"
 
 mkdir ~/.ssh
 touch ~/.ssh/config
 
 printf "Host *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25519" >> ~/.ssh/config
 
-ssh-keygen -t ed25519 -C ianjones834@protonmail.com
+ssh-keygen -t ed25519 -C "email"
 eval "$(ssh-agent -s)"
 ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 

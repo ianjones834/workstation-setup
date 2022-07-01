@@ -3,14 +3,14 @@
 #https://docs.docker.com/desktop/windows/wsl/#:~:text=The%20docker%20CLI%20and%20UI,both%20v1%20or%20v2%20mode.
 
 git config --global user.name "Ian Jones"
-git config --global user.email ianjones834@protonmail.com
+git config --global user.email "email"
 
 mkdir ~/.ssh
 touch ~/.ssh/config
 
 printf "Host *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25519" >> ~/.ssh/config
 
-ssh-keygen -t ed25519 -C ianjones834@protonmail.com
+ssh-keygen -t ed25519 -C "email"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
