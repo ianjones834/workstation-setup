@@ -10,7 +10,7 @@ brew upgrade
 
 brew install git
 
-git config --global user.name "Ian Jones"
+git config --global user.name "name"
 git config --global user.email "email"
 
 mkdir ~/.ssh
