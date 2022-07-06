@@ -1,4 +1,4 @@
-require "users/options"
-require "users/keyboard"
-require "users/plugins"
-require "users/colorscheme"
+require "options"
+require "keymaps"
+require "plugins"
+require "colorscheme"
