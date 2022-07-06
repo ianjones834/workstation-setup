@@ -36,7 +36,12 @@ brew install --cask rectangle
 brew install --cask docker
 brew install neovim
 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+mkdir ~/.config
+mkdir ~/.config/nvim
+
+
 
 #copy the .vimrc file to ~/ and run :PlugInstall in vim
