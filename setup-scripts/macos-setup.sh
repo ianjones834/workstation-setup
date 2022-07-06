@@ -35,13 +35,23 @@ source ~/.bash_profile
 brew install --cask rectangle
 brew install --cask docker
 brew install neovim
+brew install nvm
+brew install ripgrep
+pip3 install pynvim
+
+mkdir ~/.nvm
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+nvm install --lts
+npm i -g neovim
 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 mkdir ~/.config
 mkdir ~/.config/nvim
-
-
 
 #copy the .vimrc file to ~/ and run :PlugInstall in vim
