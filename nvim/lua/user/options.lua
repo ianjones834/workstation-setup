@@ -13,7 +13,8 @@ local options = {
   ignorecase = true,
   ruler = true,
   laststatus = 2,
-  termguicolors = true
+  termguicolors = true,
+  mouse = "a"
 }
 
 for k, v in pairs(options) do
