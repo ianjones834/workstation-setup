@@ -3,10 +3,11 @@ if not status_ok then
 	return
 end
 
+
+
 toggleterm.setup({
-	size = 20,
+  size = 20,
 	open_mapping = [[<c-`>]],
-  on_start = {t: "source ~/.bash_profile"},
 	hide_numbers = true,
 	shade_terminals = true,
 	shading_factor = 2,
@@ -23,7 +24,6 @@ toggleterm.setup({
 
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
-  -- vim.api.nvim_buf_set_keymap(0, 't', '<esc>', [[<C-\><C-n>]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<C-h>', [[<C-\><C-n><C-W>h]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<C-j>', [[<C-\><C-n><C-W>j]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<C-k>', [[<C-\><C-n><C-W>k]], opts)

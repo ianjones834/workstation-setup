@@ -14,7 +14,8 @@ local options = {
   ruler = true,
   laststatus = 2,
   termguicolors = true,
-  mouse = "a"
+  mouse = "a",
+  shell = "bash -l"
 }
 
 for k, v in pairs(options) do
