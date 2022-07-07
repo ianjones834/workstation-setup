@@ -23,8 +23,8 @@ keymap("n", "<leader>bd", ":bdelete<CR>", opts)
 keymap("v", "K :m", "\'<-2<CR>gv", opts)
 keymap("v", "J :m", "\'>+1<CR>gv", opts)
 
-keymap("n", "<S-h>", ":bnext<CR>", opts)
-keymap("n", "<S-l>", ":bprev<CR>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprev<CR>", opts)
 
 --Telescope
 keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
