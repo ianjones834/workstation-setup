@@ -1,4 +1,4 @@
-vim.g.tokyonight_style = "night"
+vim.g.tokyonight_style = "storm"
 
 local colorscheme = "tokyonight"
 

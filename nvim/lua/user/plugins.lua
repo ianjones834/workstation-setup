@@ -82,6 +82,10 @@ return packer.startup(function(use)
   --Toggleterm
   use { "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" }
 
+  --autosave
+  use { "Pocco81/AutoSave.nvim" }
+
+
   --Packer
   use { "wbthomason/packer.nvim", commit = "00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" }
   use { "nvim-lua/plenary.nvim", commit = "968a4b9afec0c633bc369662e78f8c5db0eba249" }
