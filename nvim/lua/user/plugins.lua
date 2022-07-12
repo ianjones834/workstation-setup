@@ -48,7 +48,7 @@ return packer.startup(function(use)
   use { "windwp/nvim-autopairs", commit = "fa6876f832ea1b71801c4e481d8feca9a36215ec" }
 
   --colorschemes
-  use("lunarvim/darkplus.nvim")
+  use("folke/tokyonight.nvim")
 
   --snippets
   use { "L3MON4D3/LuaSnip", commit = "79b2019c68a2ff5ae4d732d50746c901dd45603a" }
@@ -63,6 +63,7 @@ return packer.startup(function(use)
 
   --Treesitter
   use {"nvim-treesitter/nvim-treesitter", commit = "518e27589c0463af15463c9d675c65e464efc2fe"}
+  use {"p00f/nvim-ts-rainbow"}
 
   --Comments
   use { "numToStr/Comment.nvim", commit = "2c26a00f32b190390b664e56e32fd5347613b9e2" }
